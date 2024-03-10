@@ -1,0 +1,81 @@
+{
+  "uid" : "9ae9095d8ca8f12b",
+  "name" : "transitionsTest",
+  "fullName" : "tests.TransitionsTests.transitionsTest",
+  "historyId" : "b15d8141f3eb5e39f386b34b1aec6ccf",
+  "time" : {
+    "start" : 1710083807880,
+    "stop" : 1710083833589,
+    "duration" : 25709
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Positive: Transitions test",
+      "time" : {
+        "start" : 1710083815414,
+        "stop" : 1710083833493,
+        "duration" : 18079
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.TransitionsTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "transitionsTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.TransitionsTests"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-German.local"
+  }, {
+    "name" : "thread",
+    "value" : "39822@MacBook-Pro-German.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9ae9095d8ca8f12b.json",
+  "parameterValues" : [ ]
+}
