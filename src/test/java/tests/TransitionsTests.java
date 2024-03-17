@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.Step;
+import io.qameta.allure.junit4.DisplayName;
 import org.hamcrest.Matchers;
 import org.junit.*;
 import pages.LoginPage;
@@ -10,17 +11,17 @@ import pages.ProfilePage;
 import static helper.Helper.*;
 import static io.restassured.RestAssured.given;
 
-
-public class TransitionsTests extends BaseTest{
-
+public class TransitionsTests extends BaseTest {
     @Before
     public void setUp() {
         driver.get(URL);
         createUserFromAPI();
     }
+
     @Test
+    @DisplayName("Transitions test")
     @Step("Positive: Transitions test")
-    public void transitionsTest(){
+    public void transitionsTest() {
         MainPage mainPage = new MainPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         ProfilePage profilePage = new ProfilePage(driver);
@@ -65,5 +66,4 @@ public class TransitionsTests extends BaseTest{
                 .delete(USER_URL)
                 .then().assertThat().statusCode(202).and().body("success", Matchers.is(true));
     }
-
 }

@@ -8,7 +8,8 @@ public enum BrowserTypeEnum {
     FIREFOX ("firefox"),
     IE("ie"),
     EDGE("edge"),
-    SAFARI("safari");
+    SAFARI("safari"),
+    YANDEX("yandex");
 
     private final String getBrowserName;
 

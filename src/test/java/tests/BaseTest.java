@@ -21,10 +21,8 @@ import org.openqa.selenium.safari.SafariDriver;
 import static java.lang.String.format;
 
 public class BaseTest {
-
     private static final Logger LOG = LogManager.getLogger(BaseTest.class);
     private static final String HEADLESS = "headless";
-
     static ChromeOptions chromeOptions = new ChromeOptions();
     static FirefoxOptions firefoxOptions = new FirefoxOptions();
     static EdgeOptions edgeOptions = new EdgeOptions();
@@ -43,7 +41,6 @@ public class BaseTest {
         selectWebDriver();
 
     }
-
 
     @After
     public void cleanUp() {
@@ -70,7 +67,13 @@ public class BaseTest {
             browserTypeLogFormatter(BrowserTypeEnum.SAFARI.getGetBrowserName());
             driver = new SafariDriver();
             LOG.warn("Safari supported only UI mode");
-        } else {
+        }  else if (browserType.equalsIgnoreCase(BrowserTypeEnum.YANDEX.getGetBrowserName())) {
+            browserTypeLogFormatter(BrowserTypeEnum.YANDEX.getGetBrowserName());
+            chromeOptions.setBinary("/Applications/Yandex.app/Contents/MacOS/Yandex");
+            driver = new ChromeDriver(chromeOptions);
+            LOG.warn("Yandex supported only UI mode");
+        }
+        else {
             LOG.info("Invalid browser type: Using Chrome as default.");
             driver = new ChromeDriver(chromeOptions);
         }

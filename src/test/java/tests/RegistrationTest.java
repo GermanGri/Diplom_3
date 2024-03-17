@@ -1,11 +1,11 @@
 package tests;
 
 import io.qameta.allure.Step;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.*;
-
 import pages.MainPage;
 import pages.LoginPage;
 import pages.RegisterPage;
@@ -14,8 +14,7 @@ import site.nomoreparties.stellarburgers.User;
 import static helper.Helper.*;
 import static io.restassured.RestAssured.given;
 
-
-public class RegistrationTest extends BaseTest{
+public class RegistrationTest extends BaseTest {
     private static String randomEmail;
     private static String randomPassword;
     private static String randomName;
@@ -24,18 +23,16 @@ public class RegistrationTest extends BaseTest{
     @Before
     public void setUp() {
         driver.get(URL);
-
         RestAssured.baseURI = BASE_URI;
         randomEmail = generateRandomEmail(5);
         randomPassword = generateRandomString(6);
         randomName = generateRandomString(7);
-
     }
 
-
     @Test
+    @DisplayName("Successful registration")
     @Step("Positive: Registration user")
-    public void registrationTest(){
+    public void registrationTest() {
         MainPage mainPage = new MainPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         RegisterPage registerPage = new RegisterPage(driver);
@@ -46,12 +43,14 @@ public class RegistrationTest extends BaseTest{
         registerPage.fillingEmailRegistrationField(randomEmail);
         registerPage.fillingPasswordRegistrationField(randomPassword);
         registerPage.registerButtonClick();
-        Assert.assertEquals("Вход",loginPage.getLoginHeaderText());
+        loginPage.waitEnterText();
+        Assert.assertEquals("Вход", loginPage.getLoginHeaderText());
     }
 
     @Test
+    @DisplayName("Error for short password")
     @Step("Negative: Failed registration, short password")
-    public void incorrectRegistrationTest(){
+    public void incorrectRegistrationTest() {
         MainPage mainPage = new MainPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         RegisterPage registerPage = new RegisterPage(driver);
@@ -78,7 +77,6 @@ public class RegistrationTest extends BaseTest{
                 .delete(USER_URL)
                 .then().assertThat().statusCode(202).and().body("success", Matchers.is(true));
     }
-
 }
 
 
