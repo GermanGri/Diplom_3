@@ -1,0 +1,81 @@
+{
+  "uid" : "792a27a5180d398c",
+  "name" : "incorrectRegistrationTest",
+  "fullName" : "tests.RegistrationTest.incorrectRegistrationTest",
+  "historyId" : "e78a894e8427379be581da4c3a201711",
+  "time" : {
+    "start" : 1710083769291,
+    "stop" : 1710083789208,
+    "duration" : 19917
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Negative: Failed registration, short password",
+      "time" : {
+        "start" : 1710083783852,
+        "stop" : 1710083789068,
+        "duration" : 5216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "incorrectRegistrationTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.RegistrationTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-German.local"
+  }, {
+    "name" : "thread",
+    "value" : "39822@MacBook-Pro-German.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "792a27a5180d398c.json",
+  "parameterValues" : [ ]
+}

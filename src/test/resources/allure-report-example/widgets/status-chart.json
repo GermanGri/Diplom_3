@@ -1,0 +1,71 @@
+[ {
+  "uid" : "9ae9095d8ca8f12b",
+  "name" : "transitionsTest",
+  "time" : {
+    "start" : 1710083807880,
+    "stop" : 1710083833589,
+    "duration" : 25709
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b585153b5a4223de",
+  "name" : "loginFromRegistrationPage",
+  "time" : {
+    "start" : 1710083861849,
+    "stop" : 1710083875740,
+    "duration" : 13891
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1407d0f058e3a4f",
+  "name" : "loginFromPrivateOfficeButton",
+  "time" : {
+    "start" : 1710083833639,
+    "stop" : 1710083846908,
+    "duration" : 13269
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "716c0c6b001a14e9",
+  "name" : "registrationTest",
+  "time" : {
+    "start" : 1710083789361,
+    "stop" : 1710083802966,
+    "duration" : 13605
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22c99de4f7a3ac80",
+  "name" : "loginFromForgotPassPage",
+  "time" : {
+    "start" : 1710083846915,
+    "stop" : 1710083861842,
+    "duration" : 14927
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "792a27a5180d398c",
+  "name" : "incorrectRegistrationTest",
+  "time" : {
+    "start" : 1710083769291,
+    "stop" : 1710083789208,
+    "duration" : 19917
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1012f68a1f2c2e9b",
+  "name" : "loginFromMainPageButton",
+  "time" : {
+    "start" : 1710083875744,
+    "stop" : 1710083889877,
+    "duration" : 14133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
