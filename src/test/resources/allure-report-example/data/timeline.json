@@ -1,0 +1,104 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "MacBook-Pro-German.local",
+    "children" : [ {
+      "name" : "39822@MacBook-Pro-German.local.main(1)",
+      "children" : [ {
+        "name" : "loginFromForgotPassPage",
+        "uid" : "22c99de4f7a3ac80",
+        "parentUid" : "15d758f5ab0575baf236ec5bd4916205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710083846915,
+          "stop" : 1710083861842,
+          "duration" : 14927
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromPrivateOfficeButton",
+        "uid" : "1407d0f058e3a4f",
+        "parentUid" : "15d758f5ab0575baf236ec5bd4916205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710083833639,
+          "stop" : 1710083846908,
+          "duration" : 13269
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "transitionsTest",
+        "uid" : "9ae9095d8ca8f12b",
+        "parentUid" : "15d758f5ab0575baf236ec5bd4916205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710083807880,
+          "stop" : 1710083833589,
+          "duration" : 25709
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromRegistrationPage",
+        "uid" : "b585153b5a4223de",
+        "parentUid" : "15d758f5ab0575baf236ec5bd4916205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710083861849,
+          "stop" : 1710083875740,
+          "duration" : 13891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromMainPageButton",
+        "uid" : "1012f68a1f2c2e9b",
+        "parentUid" : "15d758f5ab0575baf236ec5bd4916205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710083875744,
+          "stop" : 1710083889877,
+          "duration" : 14133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "registrationTest",
+        "uid" : "716c0c6b001a14e9",
+        "parentUid" : "15d758f5ab0575baf236ec5bd4916205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710083789361,
+          "stop" : 1710083802966,
+          "duration" : 13605
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "incorrectRegistrationTest",
+        "uid" : "792a27a5180d398c",
+        "parentUid" : "15d758f5ab0575baf236ec5bd4916205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710083769291,
+          "stop" : 1710083789208,
+          "duration" : 19917
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "15d758f5ab0575baf236ec5bd4916205"
+    } ],
+    "uid" : "3bc05f468b73bb185f35120a8b92a64f"
+  } ],
+  "name" : "timeline"
+}
